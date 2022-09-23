@@ -68,11 +68,14 @@ public class HalamanUtamaUI extends javax.swing.JFrame {
     }//GEN-LAST:event_menuPencarianMouseClicked
 
     private void menuPeminjamanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuPeminjamanMouseClicked
-        // TODO add your handling code here:
-        Perpustakaan.controllerPeminjaman = new PeminjamanController();
+        if(Perpustakaan.controllerPeminjaman == null){
+            Perpustakaan.controllerPeminjaman = new PeminjamanController();
+        }
         Perpustakaan.controllerPeminjaman.showFormPeminjaman();
     }//GEN-LAST:event_menuPeminjamanMouseClicked
 
+
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu menuPeminjaman;

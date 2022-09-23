@@ -21,6 +21,10 @@ public class BukuProvider {
         bukuCollection.add(new Buku("Thomas and Friends"));
         bukuCollection.add(new Buku("The Return of Sherlock Holmes"));
         bukuCollection.add(new Buku("The Adventure of Sherlock Holmes"));
+        bukuCollection.add(new Buku("Petualangan Thomas"));
+        bukuCollection.add(new Buku("Topeng Panji"));
+        bukuCollection.add(new Buku("Doraemon vol. 11"));
+        bukuCollection.add(new Buku("Topeng Jakarta"));
     }
     
     

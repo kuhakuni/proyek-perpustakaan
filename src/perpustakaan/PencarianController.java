@@ -22,14 +22,14 @@ public class PencarianController {
             ArrayList<Buku> listBuku = bukuProvider.selectBuku(judul);
             if(listBuku.isEmpty())
             {
-                DialogUI dialogUI = new DialogUI("Buku tidak terdaftar");
+                DialogUI dialogUI = new DialogUI("Buku tidak terdaftar!");
                 dialogUI.pack();
                 dialogUI.setLocationRelativeTo(null);
                 dialogUI.setVisible(true);
             } 
             else Perpustakaan.formPencarian.display(listBuku);
         } catch(Exception ex) {
-            DialogUI dialogUI = new DialogUI("Connection Error");
+            DialogUI dialogUI = new DialogUI("Connection Error!");
             dialogUI.pack();
             dialogUI.setLocationRelativeTo(null);
             dialogUI.setVisible(true);
