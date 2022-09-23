@@ -4,13 +4,11 @@
  * and open the template in the editor.
  */
 package perpustakaan;
+
 import java.util.ArrayList;
-/**
- *
- * @author Septi Sulistio
- */
+
 public class Peminjaman {
-    
+
     public ArrayList<BukuDipinjam> daftarBuku = new ArrayList<BukuDipinjam>();
-    
+
 }

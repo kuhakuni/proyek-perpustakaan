@@ -7,11 +7,10 @@ package perpustakaan;
 
 import java.util.ArrayList;
 
-
 public class BukuProvider {
-    
+
     private ArrayList<Buku> bukuCollection;
-    
+
     public BukuProvider() {
         bukuCollection = new ArrayList<>();
         bukuCollection.add(new Buku("Sherlock Holmes"));
@@ -26,18 +25,17 @@ public class BukuProvider {
         bukuCollection.add(new Buku("Doraemon vol. 11"));
         bukuCollection.add(new Buku("Topeng Jakarta"));
     }
-    
-    
+
     public ArrayList<Buku> selectBuku(String judul) {
-        
+
         ArrayList<Buku> foundBuku = new ArrayList<>();
-        
-        for(Buku buku : this.bukuCollection) {
-            if(buku.judul.contains(judul))
+
+        for (Buku buku : this.bukuCollection) {
+            if (buku.judul.contains(judul))
                 foundBuku.add(buku);
         }
-        
+
         return foundBuku;
     }
-    
+
 }

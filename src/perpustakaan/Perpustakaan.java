@@ -5,7 +5,6 @@
  */
 package perpustakaan;
 
-
 public class Perpustakaan {
 
     public static HalamanUtamaUI halamanUtamaUI;
@@ -15,22 +14,21 @@ public class Perpustakaan {
     public static DialogUI dialogUI;
     public static BukuProvider bukuProvider;
     public static FormPeminjaman formPeminjaman;
-    
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         // create new Home
         Perpustakaan.halamanUtamaUI = new HalamanUtamaUI();
-        
+
         // center screen
         Perpustakaan.halamanUtamaUI.pack();
         Perpustakaan.halamanUtamaUI.setLocationRelativeTo(null);
         Perpustakaan.halamanUtamaUI.setVisible(true);
-        
-        
+
         // TODO code application logic here
     }
-    
+
 }

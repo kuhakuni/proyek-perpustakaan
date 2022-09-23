@@ -5,21 +5,18 @@
  */
 package perpustakaan;
 
-/**
- *
- * @author THAZILA
- */
 import java.util.ArrayList;
+
 public class PeminjamanManager {
-    
-    public boolean save(ArrayList<BukuDipinjam> pinjaman){
-        if(pinjaman.isEmpty()){
+
+    public boolean save(ArrayList<BukuDipinjam> pinjaman) {
+        if (pinjaman.isEmpty()) {
             return false;
-        }else{
-            Peminjaman pinjam = new Peminjaman();   
+        } else {
+            Peminjaman pinjam = new Peminjaman();
             pinjam.daftarBuku = pinjaman;
             return true;
         }
     }
-    
+
 }

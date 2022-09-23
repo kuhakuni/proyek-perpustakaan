@@ -5,17 +5,13 @@
  */
 package perpustakaan;
 
-/**
- *
- * @author Septi Sulistio
- */
 public class BukuDipinjam {
     private int lama;
     public Buku buku;
-    
-    public BukuDipinjam(Buku buku,int lama){
+
+    public BukuDipinjam(Buku buku, int lama) {
         this.buku = buku;
         this.lama = lama;
     }
-    
+
 }
